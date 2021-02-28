@@ -7,10 +7,7 @@ function IndexPage() {
   const handleChange = e => {
     setSearchInput(e.target.value)
   }
-  const handleSubmit = e => {
-    
-  }
-  
+
   return (
     <div style={{ margin: "10px" }}>
       <div style={{ margin: "10px" }}>
