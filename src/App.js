@@ -1,24 +1,16 @@
-import logo from './logo.svg';
 import './App.css';
+// import Movie from './components/Movie'
+// import Jumbotron from 'reactstrap'
+import "bootstrap/dist/css/bootstrap.css";
+// import {Jumbotron,Container} from 'reactstrap'
 
+import IndexPage from './components/IndexPage';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <IndexPage></IndexPage>
     </div>
+
   );
 }
 
