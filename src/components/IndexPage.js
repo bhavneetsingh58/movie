@@ -1,11 +1,16 @@
 import React,{useState} from "react";
 import Result from "../components/Result";
 import { InputGroup, InputGroupAddon, Input, Button } from "reactstrap";
+
 function IndexPage() {
-    const [searchInput, setSearchInput] = useState("")
+    const [searchInput, setSearchInput] = useState("movies")
 
   const handleChange = e => {
     setSearchInput(e.target.value)
+  }
+  const handleSubmit = e => {
+    e.preventDefault();
+   setSearchInput(e.target.value)
   }
 
   return (
@@ -21,7 +26,7 @@ function IndexPage() {
             onChange={handleChange}
           />
           <InputGroupAddon addonType="append">
-            <Button color="success">Search</Button>
+            <Button type="submit" color="success" onSubmit={handleChange}>Search</Button>
           </InputGroupAddon>
         </InputGroup>
       </div>
